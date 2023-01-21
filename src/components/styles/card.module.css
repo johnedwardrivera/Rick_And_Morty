@@ -1,0 +1,35 @@
+.card {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 100%;
+  font-weight: 600;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.pinimg.com/originals/c4/f7/1c/c4f71c964d9f8b855670b311af615c70.jpg");
+  color: wheat;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.btn {
+  background-color: crimson;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  align-self: flex-end;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: crimson;
+  background-color: white;
+  box-shadow: 0 0 1rem #ff0000, 0 0 4rem #ff0000, 0 0 8rem #ff0000;
+}

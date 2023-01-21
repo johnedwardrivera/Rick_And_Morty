@@ -1,0 +1,23 @@
+.container {
+  padding: 0.5rem;
+}
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 2rem;
+  padding-left: 0.9rem;
+  padding-right: 0.4rem;
+  margin: 0;
+  transition: 0.5rem;
+}
+.btn:hover {
+  color: crimson;
+  background-color: white;
+  box-shadow: 0 0 1rem #ffafcc, 0 0 4rem #ffafcc, 0 0 8rem;
+}
+.input {
+  border-radius: 2rem;
+  padding-left: 1rem;
+  margin-right: 0.6rem;
+  border: 3px solid black;
+}
