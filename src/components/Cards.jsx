@@ -14,7 +14,7 @@ export default function Cards(props) {
       <div className={style.cointainer}>
         {characters.map((elemento, index) => {
           return (
-            <div key={index}>
+            <div className={style.row} key={index}>
               <Card
                 id={elemento.id}
                 name={elemento.name}

@@ -9,7 +9,7 @@ export default function Card(props) {
         <button className={style.btn} onClick={() => onClose(id)}>
           x
         </button>
-        <Link to={`/detail/${id}`}>
+        <Link className={style.linkdetail} to={`/detail/${id}`}>
           <h2>{name}</h2>
         </Link>
         <h2>{species}</h2>

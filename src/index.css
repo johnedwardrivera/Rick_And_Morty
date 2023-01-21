@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("https://i.ytimg.com/vi/xEpuitbAEhI/maxresdefault.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }

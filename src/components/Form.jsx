@@ -28,7 +28,7 @@ const Form = (props) => {
   };
   return (
     <div className={style.container}>
-      <form action="" onSubmit={handleSubbmit}>
+      <form className={style.formulario} action="" onSubmit={handleSubbmit}>
         <label htmlFor="username">username</label>
         <input
           type="text"
@@ -50,7 +50,9 @@ const Form = (props) => {
         />
         {/* <p> {errors?.password}</p> */}
         <br />
-        <button type="submit">LOGIN</button>
+        <button className={style.btn} type="submit">
+          LOGIN
+        </button>
       </form>
     </div>
   );
