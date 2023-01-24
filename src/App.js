@@ -16,6 +16,7 @@ import Cards from "./components/Cards.jsx";
 // import SearchBar from "./components/SearchBar.jsx";
 import Nav from "./components/Nav";
 import Form from "./components/Form";
+import Favorites from "./components/Favorites";
 
 function App() {
   const [access, setAccess] = useState(false);
@@ -91,6 +92,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="detail/:detailId" element={<Detail />}></Route>
         <Route path="/" element={<Form login={login} />}></Route>
+        <Route path="/favorites" element={<Favorites />}></Route>
       </Routes>
     </div>
   );

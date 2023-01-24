@@ -25,6 +25,11 @@ const Nav = (props) => {
           Logout
         </button>
       </div>
+      <div>
+        <button>
+          <Link to="/favorites">My favoritos</Link>
+        </button>
+      </div>
     </div>
   );
 };
