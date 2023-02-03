@@ -11,11 +11,17 @@ const Nav = (props) => {
           About
         </Link>
       </div>
+      <div className={style.favorite}>
+        <Link className={style.textlink} to="/favorites">
+          My favoritos
+        </Link>
+      </div>
       <div className={style.home}>
         <Link className={style.textlink} to="home">
           Home
         </Link>
       </div>
+
       <div className={style.search}>
         <SearchBar onSearch={onSearch} />
       </div>
@@ -23,11 +29,6 @@ const Nav = (props) => {
       <div className={style.logout}>
         <button className={style.btnlogout} onClick={logout}>
           Logout
-        </button>
-      </div>
-      <div>
-        <button>
-          <Link to="/favorites">My favoritos</Link>
         </button>
       </div>
     </div>

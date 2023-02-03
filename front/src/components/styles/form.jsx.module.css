@@ -24,6 +24,10 @@
   /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
 
+.input:focus {
+  outline: #ced4da;
+}
+
 label {
   color: white;
   font-family: "Times New Roman", Times, serif;

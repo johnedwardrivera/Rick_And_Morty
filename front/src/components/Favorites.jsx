@@ -15,11 +15,11 @@ export const Favorites = (props) => {
   return (
     <div>
       <div>
-        <select onChange={handlechangeorder}>
+        <select className={style.select} onChange={handlechangeorder}>
           <option value="Ascendente">Ascendente</option>
           <option value="Descendente">Descendente</option>
         </select>
-        <select onChange={handlechangender}>
+        <select className={style.select} onChange={handlechangender}>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Genderless">Genderless</option>
@@ -31,11 +31,16 @@ export const Favorites = (props) => {
           return (
             <div className={style.card} key={id}>
               <Link className={style.linkdetail} to={`/detail/${id}`}>
-                <h2>{favorite.name}</h2>
+                <h2 className={style.name}>{favorite.name}</h2>
               </Link>
               <h2>{favorite.species}</h2>
               <h2>{favorite.gender}</h2>
-              <img src={favorite.image} alt="" style={{ height: "150px" }} />
+              <img
+                className={style.imgfavorite}
+                src={favorite.image}
+                alt=""
+                style={{ height: "150px" }}
+              />
             </div>
           );
         })}

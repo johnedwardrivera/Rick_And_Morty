@@ -41,19 +41,22 @@ function App() {
   }
 
   const location = useLocation();
-  const onSearch = (character) => {
-    let existeCharacter = existe(character);
-    console.log(existeCharacter);
-    existeCharacter &&
-      fetch(`https://rickandmortyapi.com/api/character/${character}`)
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
-          } else {
-            window.alert("No hay personajes con ese ID");
-          }
-        });
+  const onSearch = async (character) => {
+    let existeCharacter = await existe(character);
+    // console.log(existeCharacter);
+    if (existeCharacter) {
+      try {
+        const response = await fetch(
+          `https://rickandmortyapi.com/api/character/${character}`
+        );
+        const data = await response.json();
+        console.log(data);
+
+        setCharacters((oldChars) => [...oldChars, data]);
+      } catch (error) {
+        window.alert("No hay personajes con ese ID");
+      }
+    }
     // console.log(character.characterName);
     // const example = {
     //   name: "Morty Smith",

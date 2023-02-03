@@ -38,7 +38,7 @@ const Form = (props) => {
           placeholder="Escribe tu email..."
           className={style.input}
         />
-        <p> {errors?.username}</p>
+        <p style={{ color: "red" }}> {errors?.username}</p>
         <label htmlFor="password">password</label>
         <input
           type="text"
@@ -48,7 +48,7 @@ const Form = (props) => {
           placeholder="Escribe tu password..."
           className={style.input}
         />
-        {/* <p> {errors?.password}</p> */}
+        <p style={{ color: "red" }}> {errors?.password} </p>
         <br />
         <button className={style.btn} type="submit">
           LOGIN

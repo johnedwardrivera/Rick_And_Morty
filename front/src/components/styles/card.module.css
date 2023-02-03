@@ -1,0 +1,117 @@
+.card {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 50%;
+  font-weight: 600;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    /* url("https://i.pinimg.com/736x/e2/8d/c1/e28dc1ce0acabbd1a79305e5761e4a1b.jpg");  */
+      url("https://w0.peakpx.com/wallpaper/990/80/HD-wallpaper-rick-and-morty-adventure-ryck-universo.jpg");
+  color: wheat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* .card {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 50%;
+  height: 60vh;
+
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+} */
+
+/* .card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+} */
+
+.btn {
+  background-color: crimson;
+  border-radius: 50%;
+  padding: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  align-self: flex-end;
+  color: white;
+  border: none;
+  font-weight: 600;
+  transition: 0.5s;
+  position: absolute;
+  margin-top: 15px;
+}
+.btn:hover {
+  color: crimson;
+  background-color: white;
+  box-shadow: 0 0 1rem #ff0000, 0 0 4rem #ff0000, 0 0 8rem #ff0000;
+}
+.linkdetail {
+  text-decoration: none !important;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
+    0 0 30px rgba(255, 255, 255, 1), 0 0 40px #ff00de, 0 0 70px #ff00de,
+    0 0 80px #ff00de, 0 0 100px #ff00de;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.linkdetail:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
+    0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff,
+    0 0 80px #00ffff, 0 0 100px #00ffff;
+}
+.img {
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 150px; */
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-box-reflect: below 2px
+    linear-gradient(transparent, transparent, #0004);
+
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+.container {
+  max-width: 600px;
+  max-height: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hover img {
+  opacity: 0.3;
+}
+.img:hover {
+  transform: perspective(800px) rotateY(0deg);
+  opacity: 1;
+}
+.btnfavorite {
+  background: none;
+  border: 0;
+  color: inherit;
+  font-size: large;
+  position: relative;
+  margin-right: 180px;
+  margin-top: 10px;
+  max-width: 10px;
+  min-width: 10px;
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -41,9 +41,13 @@ export function Card(props) {
   return (
     <div className={style.card}>
       {isFav ? (
-        <button onClick={handleFavorite}>❤️</button>
+        <button className={style.btnfavorite} onClick={handleFavorite}>
+          ❤️
+        </button>
       ) : (
-        <button onClick={handleFavorite}>🤍</button>
+        <button className={style.btnfavorite} onClick={handleFavorite}>
+          🤍
+        </button>
       )}
       <button className={style.btn} onClick={() => onClose(id)}>
         x
@@ -51,9 +55,9 @@ export function Card(props) {
       <Link className={style.linkdetail} to={`/detail/${id}`}>
         <h2>{name}</h2>
       </Link>
-      <h2>{species}</h2>
-      <h2>{gender}</h2>
-      <img src={image} alt="" style={{ height: "150px" }} />
+      <h3>{species}</h3>
+      <h3>{gender}</h3>
+      <img className={style.img} src={image} alt="" />
     </div>
   );
 }
